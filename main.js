@@ -43,7 +43,7 @@ $.ajax(country).done(function (response) {
 	recovered.innerHTML = numberWithCommas(response[0].recovered);
 	active.innerHTML = numberWithCommas(response[0].active);
     for(i=1;i<219;i++){
-		console.log(response[i]);	
+		// console.log(response[i]);	
 		var concountry=response[i].country;	
 		if(response[i].cases!=null){
 			var concases= numberWithCommas(response[i].cases);

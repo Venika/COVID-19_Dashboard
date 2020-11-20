@@ -2,42 +2,246 @@
 * {
 	box-sizing: border-box;
 	margin: 0;
-	padding: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Scrollbar customisations */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--yellow); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--blue); 
+  }
+
+
+:root{
+    --yellow : #FCA311;
+    --blue: #233A6C;
 }
 
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
     /* background: linear-gradient(-45deg, #1b1918, #e73c7e, #23a6d5, #23d5ab); */
-    background: #003049;
-	background-size: 400% 400%;
-	animation: gradient 15s ease infinite;
-    margin: 20px;
+    background: #EBEBEB;
+    
     align-items: center;
+    
 }
 
 .data-header {
-	color: #FCBF49;
-	padding: 15px;
+    color: #FCA311;
+    background: #233A6C;
+    width: 100%;
+    padding: 15px;
     align-items: center;
     text-align: center;
     justify-content: space-between;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .info{
-    color: #fff;
+    color: rgb(0, 0, 0);
     display: flex;
-    margin-left: 15%;
-    margin-right: auto;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .stats{
-    padding-left: 5rem;
+    padding-top: 0px;
     align-items: center;
     text-align: center;
+    align-items: center;
+    padding-right: 3rem;
+    /* padding: 150px 0; */
 }
 
-.total, .recovered, .death{
-    padding-bottom: 3rem;
+.countrystats{
+    text-align: center;
+    padding-left: 3rem;    
+    
+}
+
+.countrystats h1{
+    background-color: var(--yellow);
+    color: var(--blue);
+    border-style: solid;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin-top: 25px;
+}
+
+.Chart{
+    padding-top: 1.5rem;
+    
+}
+.testchart{
+    width:640px !important;
+    height:480px !important;
+    background:  #233A6C;
+    border: none; 
+    border-radius: 2px; 
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.8);
+    
+}
+
+.total, .recovered, .active, .death{
+    padding: 15px 15px;
+    /* margin-bottom: 40px; */
+    margin: 25px 0;
+    background-color: #FCA311;
+    color:  #233A6C;
+    border-style: solid;
+    border-radius: 5px;
+    align-items: center;
+}
+
+p{
+    font-size: 25px;
+}
+
+.copyright{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    background-color:#233A6C;
+    padding: 0.5rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+  }
+
+  .copyright p{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #FCA311;
+  }
+
+  .copyright a{
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #FCA311;
+  }
+
+  ul{
+      color:var(--blue);
+      list-style: none;
+  }
+
+
+  li{
+      text-align: center;
+      font-size: 22px;
+      background-color: var(--yellow);
+      font-weight: bolder;
+      padding: 8px;
+      color: var(--blue);
+      border-style: solid;
+      border-top: none;
+      border-left: none;
+      overflow: hidden;
+      height: 38px;
+      
+  }
+
+  li:hover{
+      user-select: none;
+      cursor: pointer;
+      height: auto;
+  }
+
+
+.list {
+    max-height: 430px;
+    overflow:hidden; 
+    overflow-y:scroll;
+    color: var(--blue);
+    border-style: solid;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.list h6{
+    padding: 8px;
+    height:70px;
+}
+
+@media (max-width: 600px) {
+    .info{
+        flex-direction: column;
+    }
+    
+    .data-header {
+        font-size: 23px;
+    }
+
+    
+.stats{
+    padding-right: 0px;
+    /* padding: 150px 0; */
+}
+
+.countrystats{
+    padding: 15px 15px;
+}
+
+.countrystats h1{
+    font-size: 32px;
+}
+
+.Chart{
+    padding-top: 1.5rem;
+    text-align: center;
+}
+.testchart{
+    width:320px !important;
+    height:240px !important;
+    
+}
+
+.total, .recovered, .active, .death{
+    margin: 15px 15px;
+    padding: 10px;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+  .copyright p{
+    font-size: 1.3rem;
+  }
+
+  .copyright a{
+    font-size: 1.3rem;
+  }
+
+
+  li{
+      font-size: 20px;
+  }
+
+  .list{
+    margin-bottom: 3rem;
+    
+  }
+
+
+.list h6{
+    padding-top: 5px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
 }

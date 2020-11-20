@@ -39,7 +39,7 @@ body {
 }
 
 .data-header {
-    color: #FCA311;
+    color:  #EBEBEB;
     background: #233A6C;
     width: 100%;
     padding: 15px;
@@ -123,13 +123,13 @@ p{
   .copyright p{
     font-size: 1.2rem;
     text-decoration: none;
-    color: #FCA311;
+    color:  #EBEBEB;
   }
 
   .copyright a{
     font-size: 1.2rem;
     text-decoration: none;
-    color: #FCA311;
+    color:  #EBEBEB;
   }
 
   ul{
@@ -184,64 +184,69 @@ p{
         font-size: 23px;
     }
 
-    
-.stats{
-    padding-right: 0px;
-    /* padding: 150px 0; */
-}
-
-.countrystats{
-    padding: 15px 15px;
-}
-
-.countrystats h1{
-    font-size: 32px;
-}
-
-.Chart{
-    padding-top: 1.5rem;
-    text-align: center;
-}
-.testchart{
-    width:320px !important;
-    height:240px !important;
-    
-}
-
-.total, .recovered, .active, .death{
-    margin: 15px 15px;
-    padding: 10px;
-
-}
-
-p{
-    font-size: 20px;
-}
-
-  .copyright p{
-    font-size: 1.3rem;
-  }
-
-  .copyright a{
-    font-size: 1.3rem;
-  }
 
 
-  li{
-      font-size: 20px;
-  }
+        
+    .stats{
+        padding-right: 0px;
+        margin: 24px;
+        margin-bottom: 5px;
+    }
 
-  .list{
-    margin-bottom: 3rem;
-    
-  }
+    .countrystats{
+        padding: 15px 15px;
+        margin: 24px;
+    }
+
+    .countrystats h1{
+        font-size: 32px;
+        margin-top: 5px;
+    }
+
+    .Chart{
+        padding-top: 1.5rem;
+        text-align: center;
+    }
+    .testchart{
+        width:320px !important;
+        height:240px !important;
+        
+    }
+
+    .total, .recovered, .active, .death{
+        margin: 15px 15px;
+        padding: 10px;
+
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+    .copyright p{
+        font-size: 1.3rem;
+    }
+
+    .copyright a{
+        font-size: 1.3rem;
+    }
 
 
-.list h6{
-    padding-top: 5px;
-    font-size: 15px;
-    font-weight: bold;
-}
+    li{
+        font-size: 20px;
+    }
+
+    .list{
+        margin-bottom: 3rem;
+        
+    }
+
+
+    .list h6{
+        padding-top: 5px;
+        font-size: 15px;
+        font-weight: bold;
+    }
 
 
 }

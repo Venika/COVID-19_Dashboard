@@ -186,14 +186,17 @@ p{
     }
 
 
-
-        
+    
     .stats{
         padding-right: 0px;
         margin: 24px;
         margin-bottom: 5px;
     }
 
+    .stats h1{
+        font-size: 30px;
+    }
+    
     .countrystats{
         padding: 15px 15px;
         margin: 24px;

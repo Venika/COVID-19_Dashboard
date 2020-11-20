@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <!-- Don't need this anymore! <script type='text/javascript' src='config.js'></script> -->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>COVID-19 Data Visualization</title>
+</head>
+<body>
+    <header class="data-header">
+        <h1>COVID-19 Data Visualization <i class="fa fa-virus"></i></h1>
+        <br><br>
+        <!-- <h4>A chat box app</h4> -->
+    </header>
+    <div class="info">
+        <div class="Chart">
+            <iframe style="background: #21313C;border: none;border-radius: 2px;box-shadow: 0 2px 10px 0 rgba(70, 76, 79, .2);" width="640" height="480" src="https://charts.mongodb.com/charts-covid19-wpbkx/embed/charts?id=0bc0115c-d80e-4c8d-82bf-3d3075c39b30&theme=dark"></iframe>
+        </div>
+        <div class="stats">
+            <div class="total">
+                <h1>Total Cases</h1>
+                <p id="total_case"></p>
+            </div>
+            <div class="recovered">
+                <h1>Total Recovery</h1>
+                <p id="total_recovered"></p>
+            </div>
+            <div class="death">
+                <h1>Total Death</h1>
+                <p id="total_death"></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script type='text/javascript' src='main.js'></script>
+</html>

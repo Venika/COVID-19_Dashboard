@@ -5,8 +5,6 @@ This is a dashboard for visualizing COVID-19 data. Users can hover over each ind
 I wanted to play around with data visualization and decided to visualize COVID-19 cases around the world. I began by grabbing data provided by Johns Hopkins University Center for Systems Science and Engineering. I used Python to prep the data and to convert it into a JSON file. After that, I created a Mongo DB Atlas cluster with that data and visualized it. For the data tables, I grabbed JSON data and then parsed through it to create columns of data.
 The data table is refreshed in real time and the chart is updated weekly.
 
-# Demo
-To try out the app, visit https://github.com/Venika/COVID-19_Dashboard     
 
 # Screenshot   
 <img src="images/SS1.png" height="400" />       
